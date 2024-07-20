@@ -1,0 +1,72 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+input{
+  padding: 10px 55px;
+  margin-bottom: 45px;
+}
+
+button{
+  width: 150px;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: rgb(32, 27, 27);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.9s;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+.err{
+  width: 40px;
+  height: 40px;
+  padding: 20px;
+  background-color: red;
+  position: absolute;
+  border-radius: 100%;
+  margin: 0;
+  top: -10%;
+  left: 50%;
+  animation-name: anim;
+  animation-duration: 2s;
+  transform: translate(-50%, -50%);
+}
+
+.correct{
+  width: 40px;
+  height: 40px;
+  padding: 20px;
+  background-color: green;
+  border-radius: 100%; 
+  position: absolute;
+  margin: 0;
+  top: -10%;
+  left: 50%;
+  animation-name: anim;
+  animation-duration: 2s;
+  transform: translate(-50%, -50%);
+}
+
+section{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+@keyframes anim{
+  0% {top: -10%;}
+  50% {top: 10%;}
+  95% {top: -10%;}
+  100% {display: none;}
+}
